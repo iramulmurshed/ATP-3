@@ -1,0 +1,10 @@
+.container-login input{
+    padding: 5px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.container-login p
+{
+    font-weight: 600;
+    font-size: 32px;
+}
