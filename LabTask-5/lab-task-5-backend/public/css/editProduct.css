@@ -1,0 +1,34 @@
+.form-edit-section
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 30px auto;
+    background-color: rgb(147, 201, 147);
+    padding: 60px;
+    border-radius: 5px;
+}
+.form-edit-section input,span,select
+{
+    margin-bottom: 8px;
+
+}
+#edit-header
+{
+    color: midnightblue;
+    text-align: center;
+    margin-top: 10px;
+}
+#s-button{
+    text-decoration: none;
+    border: 0px;
+    padding: 10px;
+    color: white;
+    background-color: green;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 800;
+}
+#s-button:hover{
+    background-color: rgb(38, 129, 76);
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>
+        all product-list
+    </h1> <br> <br>
+    <!-- <button onclick="loadDoc()"> load data</button> -->
+
+    <table class="table">
+
+        <div id="myDiv"></div>
+</body>
+
+</html>
+
+
+
+<script type="text/javascript">
+    // function loadDoc() {
+        var xmlhttp = new XMLHttpRequest();
+
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == XMLHttpRequest.DONE) { 
+                if (xmlhttp.status == 200) {
+                    var data = JSON.parse(this.responseText);
+
+
+
+                    var parent = document.getElementById("myDiv");
+                    parent.innerHTML = '';
+
+                    var length = data.length;
+
+                    for (var i = 0; i < length; i++) {
+                        var child = document.createElement('div');
+                        child.innerHTML = `
+
+                            <h3>product code: ${data[i].p_code}</h3>
+                            <h3>Product Name : ${data[i].p_name}</h3>
+                            <p>product description:${data[i].p_desc}</p>
+                            <p>product category:${data[i].p_category} </p>
+                            <p>product price:${data[i].p_price} </p>
+                            <p>product Quantity: ${data[i].p_quantity}</p>
+                            <br>
+                            <br>
+                        
+                        `;
+                        parent.appendChild(child);
+                    }
+
+
+                }
+                else if (xmlhttp.status == 400) {
+                    alert('There was an error 400');
+                }
+                else {
+                    alert('something else other than 200 was returned');
+                }
+            }
+        };
+
+        xmlhttp.open("GET", "http://127.0.0.1:8000/api/product-list", true);
+        xmlhttp.send();
+    // }
+</script>

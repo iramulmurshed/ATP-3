@@ -1,0 +1,26 @@
+div
+{
+    background-color: rgb(204, 226, 170);
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px ;
+    padding-left: 50px ;
+}
+
+div a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 25px;
+    background-color: green;
+    color: white;
+    margin: 5px;
+    margin-left: 30px;
+    border-radius: 3px;
+
+
+}
+div a:hover
+{
+    background-color: rgb(62, 112, 62);
+    color: white;
+}

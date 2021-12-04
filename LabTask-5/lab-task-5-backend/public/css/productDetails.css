@@ -1,0 +1,27 @@
+body
+{
+    color: red;
+}
+.information-container
+{
+    display: block;
+
+    width: 700px;
+    color: rgb(26, 23, 23);
+    margin: 10px auto;
+    background-color: rgb(236, 237, 241);
+    padding: 20px;
+    box-shadow: -12px 10px 5px -6px rgba(145, 144, 144, 0.75);
+
+}
+.information-container h1
+{
+    text-align: center;
+    color: rgb(36, 28, 156);
+}
+.information-container p{
+    font-size: 32px;
+    font-weight: 700;
+    padding-left: 30px;
+    color: rgb(54, 53, 53);
+}

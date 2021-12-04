@@ -1,0 +1,32 @@
+.btn
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 25px;
+    background-color: green;
+    color: white;
+    border-radius: 3px;
+}
+.table-container{
+    width: 70%;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: honeydew;
+    box-shadow: rgba(24, 112, 6, 0.2) 0px 7px 29px 0px;
+
+}
+#action{
+    padding-left: 50px;
+    color: red;
+}
+.btn-delete
+{
+    margin-left: 50px;
+    background-color: red;
+}
+.btn-delete:hover
+{
+    background-color: rgb(230, 49, 49);
+    color: white;
+    transform: scale(1.09);
+}
